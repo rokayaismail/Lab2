@@ -1,0 +1,119 @@
+<DOCTYPE HTML!/>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" media="screen" href="../styles/main.css" />
+        <link rel="stylesheet" type="text/css" href="../styles/form.css"/>
+</head>
+
+<body>
+	<header>
+		<span>CV Designer</span>
+	</header>
+	<div id="container">
+		<nav>
+			<ul>
+				<li>
+					<a href="main.html">Home</a>
+				</li>
+				<li>
+					<a href="Login.html">Login</a>
+				</li>
+				<li>
+					<a href="registerForm.html">Register</a>
+				</li>
+				<li>
+					<a href="CV.html">Example</a>
+				</li>
+				<li>
+					<a href="mapImage.html">Important Websites</a>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<section id="regForm">
+				<form action="/action_page.php">
+					<fieldset>
+						<legend>Account Information</legend>
+						<b>User name*</b>
+						<input type="text" name="firstname" maxlength="10" required>
+						<br>
+
+						<b>Password*</b>
+						<input type="Password" name="password" required>
+						<br>
+
+						<b>Confirm Password*</b>
+						<input type="Password" name="confirmPassword" required>
+						<br>
+
+						<b>Credit Card No*</b>
+						<input type="number" name="creditCardNo" maxlength="11" required>
+						<br>
+					</fieldset>
+					<fieldset>
+						<legend>Personal Information</legend>
+						<b>Name*</b>
+						<input type="text" name="firstname" maxlength="10" required>
+						<br>
+
+						<b>Date Of Birth*</b>
+						<input type="date" name="DOB" required>
+						<br>
+
+						<b>Favorite Color</b>
+						<input type="Color" name="favoriteColor">
+						<br>
+
+						<b>Profile Photo(s)</b>
+						<input type="file" name="img" multiple>
+						<br>
+
+						<b>Favorite Browser</b>
+						<input id="browser"list="browsers" name="browser">
+						<datalist id="browsers">
+							<option value="Internet Explorer" />
+							<option value="Firefox" />
+							<option value="Chrome" />
+							<option value="Opera" />
+							<option value="Safari" />
+						</datalist>
+					</fieldset>
+					<fieldset>
+						<legend>Company Information</legend>
+						<b>No.Of Employees</b>
+						<input type="number" name="empNo">
+						<br>
+
+						<b>Estimated Revenue</b>
+						<input type="range" name="revenue">
+						<br>
+					</fieldset>
+					<fieldset>
+						<legend>Contact Information</legend>
+						<b>Email Address*</b>
+						<input type="email" name="email" required>
+						<br>
+
+						<b>Phone Number</b>
+						<input type="tel" name="telNo">
+						<br>
+
+						<b>Website URL</b>
+						<input type="url" name="webURL">
+						<br>
+					</fieldset>
+					<br>
+					<input type="submit" value="Submit">
+					<input type="reset" value="Cancel">
+				</form>
+			</section>
+		</main>
+	</div>
+	<footer>
+		<span>Copyright by Rokaya&copy;</span>
+	</footer>
+
+</body>
+
+</html>
